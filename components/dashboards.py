@@ -10,13 +10,9 @@ import calendar
 from globals import *
 from app import app
 
-
-
-# =========  Layout  =========== #
+# Layout
 layout = dbc.Col([
-       
-    ])
 
+])
 
-
-# =========  Callbacks  =========== #
+# Callbacks

@@ -10,19 +10,10 @@ import plotly.express as px
 import numpy as np
 import pandas as pd
 
-
-
-
-
-
-# ========= Layout ========= #
+# Layout
 layout = dbc.Col([
-                
-            ])
 
+])
 
-
-
-
-# =========  Callbacks  =========== #
+# Callbacks
 # Pop-up receita

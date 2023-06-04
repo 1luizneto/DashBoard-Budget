@@ -10,12 +10,9 @@ import pandas as pd
 
 from app import app
 
-# =========  Layout  =========== #
+# Layout
 layout = dbc.Col([
+])
 
-
-
-], )
-
-# =========  Callbacks  =========== #
+# Callbacks
 # Tabela
