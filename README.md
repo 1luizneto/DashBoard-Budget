@@ -1,5 +1,5 @@
 # DashBoard Budget
- DashBoard de controle de finanças pessoais 
+ Dashboard de controle de finanças pessoais 
  
  ## Icons
  
