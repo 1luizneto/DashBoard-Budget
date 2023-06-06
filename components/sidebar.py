@@ -28,6 +28,14 @@ layout = dbc.Col([
         dbc.Col([
             dbc.Button(color='danger', id='open-novo-despesa', children=['- Despesa'])
         ], width=6)]),
+    dbc.Modal([
+        dbc.ModalHeader(dbc.ModalTitle('Adicionar Receita')),
+        dbc.ModalBody([])
+    ], id='modal-novo-receita'),
+    dbc.Modal([
+        dbc.ModalHeader(dbc.ModalTitle('Adicionar Despesa')),
+        dbc.ModalBody([])
+    ], id='modal-novo-despesa'),
     # Seção Navegação
     html.Hr(),
     dbc.Nav([
@@ -36,5 +44,25 @@ layout = dbc.Col([
     ], vertical=True, pills=True, id='nav_buttons', style={"margin-bottom": "50px"}),
 ], id='sidebar_completa')
 
-# Callbacks
-# Pop-up receita
+
+# Callbacks -> Pop-ups
+# Receita
+@app.callback(
+    Output('modal-novo-receita', 'is_open'),
+    Input('open-novo-receita', 'n_clicks'),
+    State('modal-novo-receita', 'is_open')
+)
+def abrirModalR(n1, is_open):
+    if n1:
+        return not is_open
+
+
+# Despesa
+@app.callback(
+    Output('modal-novo-despesa', 'is_open'),
+    Input('open-novo-despesa', 'n_clicks'),
+    State('modal-novo-despesa', 'is_open')
+)
+def abrirModalD(n1, is_open):
+    if n1:
+        return not is_open
