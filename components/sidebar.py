@@ -13,7 +13,7 @@ import pandas as pd
 # Layout
 layout = dbc.Col([
     html.H1("MyBudget", className="text-primary"),
-    html.P("By ASIMOV", className="text-info"),
+    html.P("By Luiz", className="text-info"),
     html.Hr(),
 
     # Seção Perfil
